@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="is">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smiðja – tilgátur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <ol class="framvinda" aria-label="Framvinda">
+      <li data-step="0">Inngangur</li>
+      <li data-step="1">Tilgáta 1</li>
+      <li data-step="2">Tilgáta 2</li>
+      <li data-step="3">Tilgáta 3</li>
+      <li data-step="4">Samantekt</li>
+    </ol>
+
+    <!-- Inngangur -->
+    <section class="skref" data-step="0">
+      <h1>Tilgátur</h1>
+      <p>Í þessu verkefni mun hópurinn setja fram <strong>þrjár tilgátur</strong>.</p>
+      <p>Í hvert sinn er sett fram rannsóknarspurning og tveir kostir í boði, merktir <em>fig.&nbsp;1.</em> og <em>fig.&nbsp;2.</em> Ræðið saman í hópnum og komist að sameiginlegri niðurstöðu áður en þið veljið.</p>
+      <p>Tilgáta er ekki ágiskun út í loftið – hún er rökstudd hugmynd um hvað gerist. Reynið því að útskýra <em>af hverju</em> þið veljið eins og þið gerið.</p>
+      <label class="reitur">
+        Nöfn í hópnum
+        <input type="text" id="nofn" placeholder="t.d. Anna, Bjarki og Sól" autocomplete="off">
+      </label>
+      <button class="hnappur" data-next>Byrja</button>
+    </section>
+
+    <!-- Tilgáta 1 -->
+    <section class="skref" data-step="1" data-q="flot" hidden>
+      <h2>Tilgáta 1 – Að fljóta</h2>
+      <figure><img src="myndir/skal-og-kassi.jpg" alt="Fig. 1: hálfkúlulaga skál. Fig. 2: opinn, ferhyrndur kassi." width="1500" height="750"></figure>
+      <p class="spurning">Hafdís (fig.&nbsp;1.) og Ástrós (fig.&nbsp;2.) eru með ólíkar hugmyndir um hvernig best sé að láta hlut fljóta, þær vilja smíða lítinn bát. Þær eru ósammála um hvor lögunin er betri. Hver er ykkar tilgáta? <strong>Hvor lögunin hefur meiri flotkraft miðað við stærð?</strong></p>
+      <div class="val" role="radiogroup">
+        <button class="kostur" data-val="1"><span>fig. 1.</span>Skálin hennar Hafdísar</button>
+        <button class="kostur" data-val="2"><span>fig. 2.</span>Kassinn hennar Ástrósar</button>
+      </div>
+      <label class="reitur">Rökstuðningur hópsins (valfrjálst)
+        <textarea rows="2" placeholder="Við teljum þetta af því að…"></textarea>
+      </label>
+      <button class="hnappur" data-submit disabled>Staðfesta tilgátu</button>
+      <div class="endurgjof" hidden></div>
+      <button class="hnappur" data-next hidden>Áfram</button>
+    </section>
+
+    <!-- Tilgáta 2 -->
+    <section class="skref" data-step="2" data-q="skrufa" hidden>
+      <h2>Tilgáta 2 – Ísskrúfan</h2>
+      <figure><img src="myndir/isskrufur.jpg" alt="Fig. 1: ísskrúfa með oddinn neðar en hausinn. Fig. 2: ísskrúfa með oddinn ofar og hausinn hallar niður." width="1774" height="887"></figure>
+      <p class="spurning">Ragnar (fig.&nbsp;1.) og Lóa (fig.&nbsp;2.) eru ósammála um hvernig best er að skrúfa ísskrúfu í jökul (svo hún beri sem mestan þunga). <strong>Hvor aðferðin teljið þið að sé traustari?</strong></p>
+      <div class="val" role="radiogroup">
+        <button class="kostur" data-val="1"><span>fig. 1.</span>Aðferðin hans Ragnars</button>
+        <button class="kostur" data-val="2"><span>fig. 2.</span>Aðferðin hennar Lóu</button>
+      </div>
+      <label class="reitur">Rökstuðningur hópsins (valfrjálst)
+        <textarea rows="2" placeholder="Við teljum þetta af því að…"></textarea>
+      </label>
+      <button class="hnappur" data-submit disabled>Staðfesta tilgátu</button>
+      <div class="endurgjof" hidden></div>
+      <button class="hnappur" data-next hidden>Áfram</button>
+    </section>
+
+    <!-- Tilgáta 3 -->
+    <section class="skref" data-step="3" data-q="skutla" hidden>
+      <h2>Tilgáta 3 – Skutlan</h2>
+      <figure><img src="myndir/skutlur.jpg" alt="Fig. 1: hefðbundin pappírsskutla. Fig. 2: blað brotið saman í hring eða kórónu." width="1500" height="750"></figure>
+      <p class="spurning">Nemandi sá kennarateymið vera að reyna að muna hvernig gera átti skutlu. Þegar Fanney náði að gera hina fullkomnu skutlu (fig.&nbsp;1.) kom ónefndur nemandi og bað um blað. Hann braut það saman eins og einhvers konar hring eða kórónu. Síðan sagði hann: „Svona skutla flýgur betur en skutlan þín.“ <strong>Hver er tilgáta ykkar um það?</strong></p>
+      <div class="val" role="radiogroup">
+        <button class="kostur" data-val="1"><span>fig. 1.</span>Skutlan hennar Fanneyjar flýgur betur</button>
+        <button class="kostur" data-val="2"><span>fig. 2.</span>Hringskutlan flýgur betur</button>
+      </div>
+      <label class="reitur">Rökstuðningur hópsins (valfrjálst)
+        <textarea rows="2" placeholder="Við teljum þetta af því að…"></textarea>
+      </label>
+      <button class="hnappur" data-submit disabled>Staðfesta tilgátu</button>
+      <div class="endurgjof" hidden></div>
+      <button class="hnappur" data-next hidden>Sjá samantekt</button>
+    </section>
+
+    <!-- Samantekt -->
+    <section class="skref" data-step="4" hidden>
+      <h2>Tilgátur hópsins</h2>
+      <pre id="samantekt" tabindex="0"></pre>
+      <button class="hnappur" id="afrita">Afrita texta</button>
+      <span id="afritad" role="status"></span>
+      <p class="lokaord">Afritið þennan texta um tilgátur ykkar og skrifið inn í skjal sem merkt er sem <strong>verkefni 2</strong> (í Classroom). Opnið síðan <strong>verkefni 3</strong>.</p>
+    </section>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
